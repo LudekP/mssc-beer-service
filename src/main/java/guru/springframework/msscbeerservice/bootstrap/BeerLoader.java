@@ -1,5 +1,6 @@
 package guru.springframework.msscbeerservice.bootstrap;
 
+import com.sun.jdi.LongValue;
 import guru.springframework.msscbeerservice.domain.Beer;
 import guru.springframework.msscbeerservice.repositories.BeerRepository;
 import guru.springframework.msscbeerservice.web.model.BeerStyleEnum;
@@ -34,7 +35,7 @@ public class BeerLoader implements CommandLineRunner {
                 .minOnHand(12)
                 .quantityToBrew(200)
                 .price(new BigDecimal("12.95"))
-                .upc(BEER_1_UPC)
+                .upc(Long.valueOf(BEER_1_UPC))
                 .build();
 
         Beer b2 = Beer.builder()
@@ -43,7 +44,7 @@ public class BeerLoader implements CommandLineRunner {
                 .minOnHand(12)
                 .quantityToBrew(200)
                 .price(new BigDecimal("12.95"))
-                .upc(BEER_2_UPC)
+                .upc(Long.valueOf(BEER_2_UPC))
                 .build();
 
         Beer b3 = Beer.builder()
@@ -52,7 +53,7 @@ public class BeerLoader implements CommandLineRunner {
                 .minOnHand(12)
                 .quantityToBrew(200)
                 .price(new BigDecimal("12.95"))
-                .upc(BEER_3_UPC)
+                .upc(Long.valueOf(BEER_3_UPC))
                 .build();
 
         beerRepository.save(b1);

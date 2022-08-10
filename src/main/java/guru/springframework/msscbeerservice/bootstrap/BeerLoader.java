@@ -1,6 +1,5 @@
 package guru.springframework.msscbeerservice.bootstrap;
 
-import com.sun.jdi.LongValue;
 import guru.springframework.msscbeerservice.domain.Beer;
 import guru.springframework.msscbeerservice.repositories.BeerRepository;
 import guru.springframework.msscbeerservice.web.model.BeerStyleEnum;
